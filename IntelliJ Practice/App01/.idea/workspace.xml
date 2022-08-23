@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98e381de-f90f-45d0-b3ff-774391d959db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harshit/beans/Welcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/harshit/beans/Bike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harshit/springconfigs/spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/harshit/testMain/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="98e381de-f90f-45d0-b3ff-774391d959db" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +34,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "G:/Spring Practice/IntelliJ Practice/App01/src/main/resources",
+    "last_opened_file_path": "G:/Projects/DatingApp",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
