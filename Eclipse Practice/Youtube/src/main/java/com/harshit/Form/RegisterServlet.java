@@ -2,8 +2,8 @@ package com.harshit.Form;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.concurrent.locks.Condition;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 
@@ -25,8 +25,19 @@ public class RegisterServlet extends HttpServlet{
 			out.println("<h2> Email :"+email+"</h2>");
 			out.println("<h2> Gender :"+gender+"</h2>");
 			out.println("<h2> Coruse :"+course+"</h2>");
+			out.println();
+			out.println("Data Saved");
+			RequestDispatcher rd = req.getRequestDispatcher("RegisterSuccess"); 
+			rd.forward(req,resp);
+//			rd.include(req,resp);
+//			out.println("Forwared!");
+			
 		}
-		else 
+		else {
 			out.println("<h2>You have not accepted terms and conditions</h2>");
+			RequestDispatcher rd = req.getRequestDispatcher("index2.html");
+			rd.include(req,resp);
+			out.println("Included");
+		}
 	}
 }
