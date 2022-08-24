@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<style>
+		.container{
+			width: 40%;
+			border: 1px solid black;
+			margin: auto;
+			padding: 20px;
+			font-size:20px;
+		}
+		#myform table tr td input{
+			font-size: 20px;
+			}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Enter two numbers, you will get SUM and PRODUCT:</h1>
+	<form id = "myform" action="sum" method="post">
+		<table>
+			<tr>
+				<td>Number 1	:</td>
+				<td><input type="text" name="number1" placeholder="Enter here"></td>
+			</tr>
+			<tr>
+				<td>Number 2	:</td>
+				<td><input type="text" name="number2" placeholder="Enter here"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button type="submit">Submit</button> &nbsp; &nbsp;<button type="reset">Reset</button></td>
+			</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>
