@@ -22,3 +22,25 @@ public class Product extends HttpServlet {
 		out.println("<h1>Product of : "+n1+" and "+n2+"	: "+pro+"</h2>");
 	} 
 }
+
+
+
+
+\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
