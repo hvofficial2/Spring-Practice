@@ -26,12 +26,6 @@ public class Product extends HttpServlet {
 
 
 
-\
-
-
-
-
-
 
 
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home Page</title>
+<style>
+	.container{
+		width: 30%;
+		border: 1px solid black;
+		margin: auto;
+		font-size: 20px;
+		padding: 20px;
+	}
+	#myform table tr td input button{
+			font-size: 20px;
+		}
+</style>
+</head>
+<body>
+	<div class="container">
+		<h1>This is the home page!</h1>
+		<form id = "myform" action="servlet1" method = "post">
+			<table>
+				<tr>
+					<td><input type="text" name="user_name" placeholder="Enter your name here"></td>
+					<td>
+						<button type="submit">
+						Submit
+						</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
