@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employee" class="com.harshit.App03.beans.EmployeeBean">
+        <property name="eid" value="01"/>
+        <property name="ename" value="Harshit"/>
+        <property name="ecity" value="Moradabad"/>
+        <property name="ecountry" value="India"/>
+        <property name="ephone" value="8218046723"/>
+    </bean>
+
+</beans>

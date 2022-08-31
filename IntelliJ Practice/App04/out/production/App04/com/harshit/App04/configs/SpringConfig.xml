@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id = "employeebean" class="com.harshit.App04.beans.EmployeeBean">
+        <property name="empid" value="101"/>
+        <property name="ename" value="Harshit"/>
+        <property name="ecity" value="Moradabad"/>
+        <property name="ecountry" value="India"/>
+    </bean>
+</beans>
