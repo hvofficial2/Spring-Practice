@@ -41,8 +41,24 @@ public class StudentController extends HttpServlet {
 					break;
 		case "DELETE":deleteStudent(req,res);
 					break;
+		case "SEARCH":searchStudent(req,res);
+					break;
 		default:listStudents(req,res);
 		}
+	}
+
+	private void searchStudent(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		String name=req.getParameter("name");
+		if(!name.equalsIgnoreCase("") && !name.trim().equalsIgnoreCase("")) {
+			List<Student> students = studentDbUtil.searchStudents(name.trim());
+			req.setAttribute("students", students);
+			
+			// Step-3 get Request dispatcher
+			RequestDispatcher rd = req.getRequestDispatcher("student_view.jsp");
+			
+			// Step-4 Forward RD to JSP (View part)
+			rd.forward(req, res);
+		}	
 	}
 
 	private void deleteStudent(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException {

@@ -12,17 +12,23 @@
   padding-top: 35px !important;
   padding-bottom: 35px !important;
 }
+  
 </style>
 </head>
 <body>
 <%@include file="header.jsp" %>
 
 <div class= "container">
-<h4><b>
-<input type="button" value="Add Student" onclick="window.location.href='AddStudent.jsp'">
-</b></h4>
+	<form id="myform" action="StudentController" >
+		<input type="hidden" name="command" value="SEARCH">
+		<h6>
+		<input type="text" name="name" placeholder="Search Student By Name">
+		<button type="submit">Search</button>
+		<input type="button" value="Add Student" onclick="window.location.href='AddStudent.jsp'" style="float: right;">
+		</h6>
+	</form>
 <div class="card">
-<table class="table">
+<table class="table table-striped table-hover">
 	<tr>
 		<th>Id</th>
 		<th>First Name</th>
@@ -53,6 +59,7 @@
 	</c:forEach>
 </table>
 </div>
+<a href="StudentController">All Students List</a>
 </div>
 
 <%@include file="footer.jsp" %>

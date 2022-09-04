@@ -145,4 +145,31 @@ public class StudentDbUtil {
 			close(null, pstmt, con);
 	}
 	}
+
+	public List<Student> searchStudents(String name) {
+		List<Student> students = new ArrayList<>();
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet set = null;
+		
+		try {
+			con = dataSource.getConnection();
+			String s = "select * from student where (first_name=? OR last_name=?)";
+			pstmt = con.prepareStatement(s);
+			pstmt.setString(1,name);
+			pstmt.setString(2,name);
+			set = pstmt.executeQuery();
+			while(set.next()) {
+				students.add(new Student(set.getInt(1),set.getString(2),
+										 set.getString(3),set.getString(4)));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		finally{
+			close(set,pstmt,con);
+		}
+		return students;
+	}
 }
